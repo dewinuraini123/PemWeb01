@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 9.4</title>
+</head>
+<body>
+    <h1>Menghitung jumlah dua bilangan</h1>
+    <form>
+        Masukkan Angka : <input type="number" id="angka" onchange="jumlah()" />
+        <br />
+        +
+        <br />
+        Masukkan Angka : <input type="number" id="angka1" onchange="jumlah()" />
+        <br />
+        =
+        <br />
+        Hasil Penjumlahan : <input type="text" id="hasil"  />
+    </form>
+
+    <script>
+        function jumlah() {
+            let masukkan_angka1 = document.getElementById("angka").value;
+            let masukkan_angka2 = document.getElementById("angka1").value;
+            let total = parseInt(masukkan_angka1) + parseInt(masukkan_angka2);
+            document.getElementById("hasil").value = total;
+        }
+    </script>
+</body>
+</html>
